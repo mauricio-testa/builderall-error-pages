@@ -7,7 +7,8 @@
 ```html
 <!-- required -->
 <script src="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@latest/dist/main.js"></script>
-<!-- muli font - optional -->
+
+<!-- optional: If your project doesn't include the "muli" font, you can add it with the following line -  -->
 <link href="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@latest/assets/fonts/muli/muli.css" rel="stylesheet">
 ```
 
@@ -24,8 +25,9 @@
 
 > All parameters are optional
 
-### Usage in Vue projects
-See [this link](https://vuejs.org/guide/extras/web-components.html#using-custom-elements-in-vue)
+### Related
+* [Usage in Vue projects](https://vuejs.org/guide/extras/web-components.html#using-custom-elements-in-vue)
+* [How to customize Laravel error pages](https://laravel.com/docs/9.x/errors#custom-http-error-pages)
 
 ## Development
 
