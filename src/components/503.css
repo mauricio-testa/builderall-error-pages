@@ -1,0 +1,19 @@
+.builderall-error-503 {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  background: url(../../assets/img/503.png) center 90%/45% no-repeat, #FDFEFF;
+}
+
+@media screen and (max-width: 768px) {
+  .builderall-error-503 {
+    background-size: contain;
+    padding: 45px 20px;
+  }
+}
+
+.builderall-error-503 > div {
+  padding: 10vh;
+  background: linear-gradient(180deg, #FDFEFF 34%, transparent)
+}

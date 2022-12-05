@@ -1,0 +1,48 @@
+.builderall-error-page {
+  font-family: Muli;
+}
+
+.builderall-error-page h1 {
+  font-size: 2.3rem;
+  line-height: 38px;
+  font-weight: 800;
+  color: #373F4E;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.builderall-error-page h2 {
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-weight: normal;
+  color: #373F4E;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.builderall-error-page button,
+.builderall-error-page a {
+  margin-top: 1.5rem;
+  font-size: .9rem;
+  font-weight: 800;
+  padding: 15px 30px;
+  background-color: #0080fc;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: .3s filter;
+}
+.builderall-error-page button:hover,
+.builderall-error-page a:hover {
+  filter: brightness(0.9);
+}

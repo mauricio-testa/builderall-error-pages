@@ -1,21 +1,22 @@
-import styles from './404.css'
+import styles from './503.css'
 import shared from './shared.css'
 
 const template = document.createElement('template');
 const stylesheet = document.createElement('style');
 stylesheet.innerHTML = styles.toString() + shared.toString();
 template.innerHTML = `
-  <div class="builderall-error-404 builderall-error-page">
+  <div class="builderall-error-503 builderall-error-page">
     <div>
-      <h1 class="pre">Oopss!</h1>
-      <h1 class="headline">Something Went Wrong</h1>
-      <h2 class="text">Could not find the page you are looking for</h2>
-      <a class="button" href="/">Back to home</a>
+      <h1 class="headline">Maintenance mode</h1>
+      <h2 class="text">We are doing some scheduled maintenance. Please try again in a few moments.</h2>
+      <button class="button" onclick="javascript:location.reload()">
+        Reload page
+      </button>
     </div>
   </div>
 `;
 
-class BuilderallError404 extends HTMLElement {
+class BuilderallError503 extends HTMLElement {
   constructor() {
     super();
 
@@ -25,25 +26,23 @@ class BuilderallError404 extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     this.shadowRoot.appendChild(stylesheet)
-
   }
 
   connectedCallback() {
     const props = [
-      { name: 'pre', selector: '.pre', attr: 'innerHTML' },
       { name: 'headline', selector: '.headline', attr: 'innerHTML' },
       { name: 'text', selector: '.text', attr: 'innerHTML' },
       { name: 'button-text', selector: '.button', attr: 'innerHTML' },
-      { name: 'button-href', selector: '.button', attr: 'href' },
     ]
     const shadow = this.shadowRoot;
 
     props.forEach(prop => {
       if (this.attributes[prop.name]) {
+        console.log(prop)
         shadow.querySelector(prop.selector)[prop.attr] = this.attributes[prop.name].value
       }
     });
   }
 }
 
-export default BuilderallError404
+export default BuilderallError503

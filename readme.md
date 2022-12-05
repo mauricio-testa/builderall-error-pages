@@ -14,12 +14,20 @@
 
 ### Add to body
 ```html
+<!-- 404 page -->
 <builderall-error-404
   pre="Ops"
   headline="Algo aconteceu mal!"
   text="Não foi possível encontrar a página que você está procurando"
   button-text="Voltar para a home"
   button-href="/"
+/>
+
+<!-- 503 page -->
+<builderall-error-503
+  headline="Sistema em manutenção"
+  text="Estamos fazendo algumas manutenções programadas. Tente novamente em alguns instantes"
+  button-text="Recarregar"
 />
 ```
 
