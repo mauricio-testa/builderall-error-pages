@@ -1,12 +1,12 @@
 {
 	"name": "builderall-error-pages",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": false,
 	"description": "",
 	"homepage": "",
 	"author": "mauricio-testa",
 	"license": "MIT",
-	"main": "dist/index.min.js",
+	"main": "dist/main.js",
 	"files": [
 		"dist/*",
 		"src/*"
