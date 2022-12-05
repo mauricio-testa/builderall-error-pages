@@ -1,8 +1,9 @@
 import styles from './404.css'
 
 const template = document.createElement('template');
+const stylesheet =  document.createElement('style');
+stylesheet.innerHTML = styles.toString();
 template.innerHTML = `
-	<style>${styles.toString()}</style>
 	<div>
 		<div class="builderall-error-404">
 			<div>
@@ -18,13 +19,13 @@ template.innerHTML = `
 class BuilderallError404 extends HTMLElement {
     constructor() {
         super();
-		
 
 		document.body.style.margin = 0;
 		document.body.style.backgroundColor = '#e9edf2';
 
 		this.attachShadow({ mode: 'open'});
 		this.shadowRoot.appendChild(template.content.cloneNode(true));
+		this.shadowRoot.appendChild(stylesheet)
 
     }
 
