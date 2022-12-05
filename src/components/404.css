@@ -6,9 +6,9 @@
 	display: block;
 	font-family: Muli;
 	background:
-		url(./assets/img/404.png) top left/contain no-repeat,
-		url(./assets/img/404-note-green.png) 90% 25%/105px no-repeat,
-		url(./assets/img/404-note-pink.png) 80% 80%/105px no-repeat,
+		url(../../assets/img/404.png) top left/contain no-repeat,
+		url(../../assets/img/404-note-green.png) 90% 25%/105px no-repeat,
+		url(../../assets/img/404-note-pink.png) 80% 80%/105px no-repeat,
 		#e5e9f0;
 }
 .builderall-error-404 div {
@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 768px) {
 	.builderall-error-404 {
-		background: url(./assets/img/404.png) 25%/cover no-repeat;
+		background: url(../../assets/img/404.png) 25%/cover no-repeat;
 	}
 }
 
