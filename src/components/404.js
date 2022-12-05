@@ -8,7 +8,7 @@ template.innerHTML = `
 		<div class="builderall-error-404">
 			<div>
 				<h1 class="pre">Oopss!</h1>
-				<h1 class="title">SOMETHING WENT WRONG</h1>
+				<h1 class="title">Something Went Wrong</h1>
 				<h2 class="text">Could not find the page you are looking for</h2>
 				<a class="button" href="/">Back to home</a>
 			</div>
