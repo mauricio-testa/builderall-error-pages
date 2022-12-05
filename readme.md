@@ -14,11 +14,11 @@
 ### Add to body
 ```html
 <builderall-error-404
-pre="Ops"
-headline="Algo aconteceu mal!"
-text="Não foi possível encontrar a página que você está procurando"
-button-text="Voltar para a home"
-button-href="/"
+  pre="Ops"
+  headline="Algo aconteceu mal!"
+  text="Não foi possível encontrar a página que você está procurando"
+  button-text="Voltar para a home"
+  button-href="/"
 />
 ```
 
