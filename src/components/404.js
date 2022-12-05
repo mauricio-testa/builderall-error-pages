@@ -8,7 +8,7 @@ template.innerHTML = `
 		<div class="builderall-error-404">
 			<div>
 				<h1 class="pre">Oopss!</h1>
-				<h1 class="title">Something Went Wrong</h1>
+				<h1 class="headline">Something Went Wrong</h1>
 				<h2 class="text">Could not find the page you are looking for</h2>
 				<a class="button" href="/">Back to home</a>
 			</div>
@@ -32,7 +32,7 @@ class BuilderallError404 extends HTMLElement {
 	connectedCallback() {
 		const props = [
 			{ name: 'pre', selector: '.pre', attr: 'innerHTML'},
-			{ name: 'title', selector: '.title', attr: 'innerHTML'},
+			{ name: 'headline', selector: '.headline', attr: 'innerHTML'},
 			{ name: 'text', selector: '.text', attr: 'innerHTML'},
 			{ name: 'button-text', selector: '.button', attr: 'innerHTML'},
 			{ name: 'button-href', selector: '.button', attr: 'href'},
@@ -41,6 +41,7 @@ class BuilderallError404 extends HTMLElement {
 
 		props.forEach(prop => {
 			if (this.attributes[prop.name]) {
+				console.log(prop)
 				shadow.querySelector(prop.selector)[prop.attr] = this.attributes[prop.name].value
 			}
 		});

@@ -21,3 +21,5 @@
 	button-href="/"
 />
 ```
+
+> All parameters are optional
