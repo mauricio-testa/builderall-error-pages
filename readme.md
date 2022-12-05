@@ -6,9 +6,9 @@
 
 ```html
 <!-- required -->
-<script src="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@master/dist/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@latest/dist/main.js"></script>
 <!-- muli font - optional -->
-<link href="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@master/assets/fonts/muli/muli.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/mauricio-testa/builderall-error-pages@latest/assets/fonts/muli/muli.css" rel="stylesheet">
 ```
 
 ### Add to body
