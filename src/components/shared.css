@@ -41,6 +41,7 @@
   cursor: pointer;
   user-select: none;
   transition: .3s filter;
+  font-family: inherit;
 }
 .builderall-error-page button:hover,
 .builderall-error-page a:hover {
